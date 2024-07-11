@@ -12,7 +12,8 @@ If you want to bootstrap an environment, then copy-paste this and replace the de
 It works great with Discord webhooks and probably with Slack too.
 ```sh
 export WEBHOOK_URL=https://example.com/webhook && \
-       curl -s https://raw.githubusercontent.com/exa-laboratories/fuckvram/main/bootstrap.sh | bash
+export LIMIT=0.98 && \
+curl -s https://raw.githubusercontent.com/exa-laboratories/fuckvram/main/bootstrap.sh | bash
 ```
 ### Else
 Otherwise just clone the repo and run `watchdog.py`. Don't forget to set the `WEBHOOK_URL` environment variable.
