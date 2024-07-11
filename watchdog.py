@@ -7,7 +7,7 @@ from os import environ as env
 
 # CONFIG
 SLEEP_DURATION = 10
-LIMIT_TRIGGER = 0.98
+LIMIT_TRIGGER = float(env.get("LIMIT") or 0.99)
 
 WEBHOOK_URL = env.get("WEBHOOK_URL")
 
