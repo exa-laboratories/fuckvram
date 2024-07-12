@@ -11,9 +11,10 @@ If you want to bootstrap an environment, then copy-paste this and replace the de
 
 It works great with Discord webhooks and probably with Slack too.
 ```sh
-export WEBHOOK_URL=https://example.com/webhook && \
-export LIMIT=0.98 && \
-export LOW_LIMIT=0.08 && \
+export WEBHOOK_URL=https://example.com/webhook 
+export LIMIT=0.98
+export LOW_LIMIT=0.08 
+export INTERVAL=20 
 curl -s https://raw.githubusercontent.com/exa-laboratories/fuckvram/main/bootstrap.sh | bash
 ```
 ### Else
